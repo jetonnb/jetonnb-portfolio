@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("./blue-background-photos-and-cyan-wallpaper-for-free-download-free-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header {
+    background-color: rgba(254, 255, 255, 0.9); /* Slightly transparent background */
+    color: rgb(43, 127, 179);
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px; /* Optional: adds space around the header */
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+#footertext a {
+    color: rgb(43, 127, 179); /* Set the footer text color to white */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#footertext a:hover {
+    color: #dcdcdc; /* Slightly lighter color on hover */
+}
+
+a {
+    color: #f2f5f7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: rgb(43, 127, 179);
+}
+
+/* Project Section */
+.projects {
+    padding: 20px;
+}
+
+.projects img {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.projects img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(232, 238, 242, 0.9); /* Slightly transparent background */
+    color: white;
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px; /* Optional: adds space around the header */
+}
+
+footer a {
+    margin: 0 15px;
+    font-weight: bold;
+    color: white; /* Footer link color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dcdcdc; /* Hover color for footer links */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#profili {
+    height: 100px;
+    margin-left: 0%;
+}
+
