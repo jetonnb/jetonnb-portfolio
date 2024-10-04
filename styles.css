@@ -1,6 +1,5 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif; /* Combined font-family */
     background-image: url("./blue-background-photos-and-cyan-wallpaper-for-free-download-free-vector.jpg");
     background-size: cover;
     background-position: center;
@@ -10,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out; /* Animation added */
 }
 
 header {
@@ -19,55 +18,72 @@ header {
     padding: 20px;
     border-radius: 15px; /* Rounded corners */
     margin: 20px; /* Optional: adds space around the header */
+    text-align: center; /* Ensure text is centered */
 }
 
-h1, h2 {
+header h1 {
+    font-size: 2.5em; /* Keep original sizes */
     margin: 10px 0;
 }
 
-#footertext a {
-    color: rgb(43, 127, 179); /* Set the footer text color to white */
-    text-decoration: none;
-    transition: color 0.3s;
+header h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
-#footertext a:hover {
-    color: #dcdcdc; /* Slightly lighter color on hover */
+img#profili {
+    border-radius: 50%;
+    width: 150px; /* Maintain original width */
+    height: 150px; /* Maintain original height */
+    margin-top: 20px;
+    border: 3px solid white;
 }
 
-a {
-    color: #f2f5f7;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: rgb(43, 127, 179);
-}
-
-/* Project Section */
 .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px;
+    margin: 0 auto;
 }
 
-.projects img {
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.3s;
+.projects h2 {
+    font-size: 1.2em;
+    color: #0073e6;
+    margin: 10px 0;
 }
 
-.projects img:hover {
-    transform: scale(1.05);
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    text-align: center;
 }
 
-/* Footer */
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
 footer {
     margin-top: 20px;
     padding: 10px;
     background-color: rgba(232, 238, 242, 0.9); /* Slightly transparent background */
     color: white;
     border-radius: 15px; /* Rounded corners */
-    margin: 20px; /* Optional: adds space around the header */
+    margin: 20px; /* Optional: adds space around the footer */
+    text-align: center; /* Centered text in footer */
+}
+
+footer h4 {
+    margin: 10px 0;
 }
 
 footer a {
@@ -81,6 +97,37 @@ footer a:hover {
     color: #dcdcdc; /* Hover color for footer links */
 }
 
+#social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+#social-icons img:hover {
+    transform: scale(1.2);
+}
+
+a {
+    color: #f2f5f7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: rgb(43, 127, 179);
+}
+
+/* Project Section */
+.projects img {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.projects img:hover {
+    transform: scale(1.05);
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -90,6 +137,23 @@ footer a:hover {
         opacity: 1;
     }
 }
+
+#profili {
+    height: 100px;
+    margin-left: 0%;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+}
+
 
 #profili {
     height: 100px;
