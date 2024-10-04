@@ -1,5 +1,6 @@
+
 body {
-    font-family: 'Poppins', Arial, sans-serif; /* Combined font-family */
+    font-family: 'Poppins', Arial, sans-serif; 
     background-image: url("./blue-background-photos-and-cyan-wallpaper-for-free-download-free-vector.jpg");
     background-size: cover;
     background-position: center;
@@ -9,21 +10,21 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    animation: fadeIn 1s ease-in-out; /* Animation added */
+    animation: fadeIn 1s ease-in-out;
 }
 
 header {
-    background-color: rgba(254, 255, 255, 0.9); /* Slightly transparent background */
+    text-align: center; 
+    background-color: rgba(254, 255, 255, 0.9);
     color: rgb(43, 127, 179);
     padding: 20px;
-    border-radius: 15px; /* Rounded corners */
-    margin: 20px; /* Optional: adds space around the header */
-    text-align: center; /* Ensure text is centered */
+    border-radius: 15px; 
+    margin: 20px; 
 }
 
 header h1 {
-    font-size: 2.5em; /* Keep original sizes */
-    margin: 10px 0;
+    font-size: 2.5em;
+    margin: 10px 0; 
 }
 
 header h2 {
@@ -33,8 +34,8 @@ header h2 {
 
 img#profili {
     border-radius: 50%;
-    width: 150px; /* Maintain original width */
-    height: 150px; /* Maintain original height */
+    width: 150px; 
+    height: 150px; 
     margin-top: 20px;
     border: 3px solid white;
 }
@@ -75,11 +76,11 @@ img#profili {
 footer {
     margin-top: 20px;
     padding: 10px;
-    background-color: rgba(232, 238, 242, 0.9); /* Slightly transparent background */
+    background-color: rgba(232, 238, 242, 0.9); 
     color: white;
-    border-radius: 15px; /* Rounded corners */
-    margin: 20px; /* Optional: adds space around the footer */
-    text-align: center; /* Centered text in footer */
+    border-radius: 15px; 
+    margin: 20px;
+    text-align: center; 
 }
 
 footer h4 {
@@ -89,12 +90,12 @@ footer h4 {
 footer a {
     margin: 0 15px;
     font-weight: bold;
-    color: white; /* Footer link color */
+    color: white;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #dcdcdc; /* Hover color for footer links */
+    color: #dcdcdc; 
 }
 
 #social-icons img {
@@ -117,7 +118,7 @@ a:hover {
     color: rgb(43, 127, 179);
 }
 
-/* Project Section */
+
 .projects img {
     border: 2px solid #ddd;
     border-radius: 8px;
@@ -128,7 +129,7 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -143,20 +144,14 @@ a:hover {
     margin-left: 0%;
 }
 
-/* Media Queries */
+
 @media (max-width: 600px) {
     header h1 {
-        font-size: 2em;
+        font-size: 2em; 
     }
 
     header h2 {
-        font-size: 1.2em;
+        font-size: 1.2em; 
     }
-}
-
-
-#profili {
-    height: 100px;
-    margin-left: 0%;
 }
 
