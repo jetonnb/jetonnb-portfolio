@@ -1,0 +1,294 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-image: url("./blue-background-photos-and-cyan-wallpaper-for-free-download-free-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly more opaque */
+    color: rgb(43, 127, 179);
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 80%; /* Restrict the width for better layout on large screens */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect */
+}
+
+header:hover {
+    transform: translateY(-10px); /* Subtle hover lift effect */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgb(30, 90, 145); /* Slightly darker for contrast */
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(43, 127, 179);
+}
+
+hr {
+    width: 60%;
+    border: none;
+    border-top: 2px solid rgb(43, 127, 179);
+    margin: 20px 0;
+}
+
+
+#profili {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid rgba(43, 127, 179, 0.5); /* Add a soft border around the profile picture */
+}
+
+
+img#profili {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border: 3px solid white;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    font-size: 1.2em;
+    color: #0073e6;
+    margin: 10px 0;
+}
+
+
+.project-card {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(232, 238, 242, 0.9);
+    color: white;
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+footer h4 {
+    margin: 10px 0;
+}
+
+footer a {
+    margin: 0 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dcdcdc;
+}
+
+#social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+#social-icons img:hover {
+    transform: scale(1.2);
+}
+
+a {
+    color: #f2f5f7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: rgb(43, 127, 179);
+}
+
+.projects img {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.projects img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+}
+
+
+.cv-button {
+    background-color: rgb(43, 127, 179);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.cv-button:hover {
+    background-color: rgb(30, 90, 145); /* Darken on hover */
+    transform: scale(1.05); /* Slightly grow on hover */
+}
+
+
+.download-btn {
+    background: linear-gradient(135deg, #0073e6, #00c6ff);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    transition: background 0.4s, box-shadow 0.4s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #005bb5, #0090d6);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.download-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(232, 238, 242, 0.9);
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.hidden-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#about-me, #contact-me {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+nav {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the links */
+    gap: 20px; /* Add space between links */
+}
+
+.nav-links li {
+    display: inline; /* Display list items inline */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(43, 127, 179); /* Link color */
+    font-weight: 600; /* Make links bold */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-links a:hover {
+    color: rgb(30, 90, 145); /* Darken on hover */
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
