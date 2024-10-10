@@ -1,0 +1,188 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #111, #333);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.player {
+    width: 320px;
+    text-align: center;
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.player img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.player img:hover {
+    transform: scale(1.05);
+}
+
+.song-info {
+    margin-bottom: 20px;
+}
+
+
+.controls button {
+    padding: 15px; 
+    font-size: 1.5em;
+    cursor: pointer;
+    background: linear-gradient(135deg, #1DB954, #66ff99); /* Bright green gradient */
+    color: white;
+    border: none;
+    border-radius: 50%; 
+    box-shadow: 0 5px 10px rgba(0, 255, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 15px; 
+}
+
+.controls button:hover {
+    background: linear-gradient(135deg, #66ff99, #00cc66);
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 255, 0, 0.7);
+}
+
+.controls button:active {
+    transform: scale(0.95);
+}
+
+
+
+.controls button:focus {
+    outline: none;
+}
+
+.progress-container {
+    margin: 10px 0;
+}
+
+#progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px; /* Ensure it's still the size you want */
+    background-color: #333; /* Background color behind the filled progress */
+    outline: none;
+}
+
+#progress-bar::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background-color: #333; /* Background behind the progress */
+    border-radius: 5px;
+}
+
+#progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: white; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -4px; /* Centers the thumb vertically */
+}
+
+#progress-bar::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+#progress-bar::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Filling the progress bar */
+#progress-bar::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #1DB954 0%, #1DB954 calc(var(--val) * 1%), #333 calc(var(--val) * 1%), #333 100%);
+}
+
+#progress-bar::-moz-range-progress {
+    background-color: #1DB954; /* Filled part for Firefox */
+}
+
+
+.time-info {
+    margin-top: 10px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.overlay-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.overlay-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+#start-btn {
+    padding: 20px 40px; 
+    font-size: 1.8em; 
+    cursor: pointer;
+    background: linear-gradient(135deg, #1DB954, #66ff99); 
+    color: white;
+    border: none;
+    border-radius: 50px; 
+    box-shadow: 0 8px 15px rgba(0, 255, 0, 0.5); 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#start-btn:hover {
+    background: linear-gradient(135deg, #66ff99, #00cc66); 
+    transform: scale(1.1); 
+    box-shadow: 0 12px 20px rgba(0, 255, 0, 0.7);  
+}
+
+#start-btn:active {
+    transform: scale(0.98); 
+}
+
+
+.overlay.hidden {
+    display: none;
+}
+
+
+@media (max-width: 400px) {
+    .player {
+        width: 90%;
+    }
+}
