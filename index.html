@@ -11,11 +11,13 @@
 
 <body>
     <header>
-        
+        <!-- Navigation Links -->
         <nav>
             <ul class="nav-links">
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about-me">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
@@ -25,12 +27,13 @@
         <hr />
         <img id="profili" src="./1725809477373.jpeg" alt="Profile Picture">
         
-      
+        <!-- CV Download Button -->
         <a href="./assets/JetonNb CV.pdf" download class="cv-download">
             <button class="cv-button">Download My CV</button>
         </a>
     </header>
     
+    <!-- Projects Section -->
     <section class="hidden-section" id="projects">
         <h1 style="color: aliceblue;">Projects </h1>
         <div class="projects">
@@ -58,7 +61,7 @@
             <div class="project-card">
                 <a href="./colorproject/index.html">
                     <h2>Colors in Spanish Project</h2>
-                    <img src="./assets/images/colorsss.png" alt="Colors in Spanish Project">
+                    <img src="./assets/images/colors.png" alt="Colors in Spanish Project">
                 </a>
             </div>
 
@@ -78,15 +81,41 @@
         </div>
     </section>
 
-   
+    <!-- About Me Section -->
     <section id="about-me" class="hidden-section">
         <h1>About Me</h1>
         <p>
             I am <span class="highlight">Jeton Nikollbibaj</span>, a passionate <strong>web developer</strong> from Gjakova with a strong foundation in both <strong>front-end</strong> and <strong>back-end</strong> technologies. My focus is on delivering high-quality, user-friendly web applications, while continuously enhancing my skills in modern frameworks like <span class="highlight">React</span> and integrating responsive design principles.
         </p>
     </section>
+<!-- Education Section -->
+<section id="education" class="hidden-section">
+    <h1>Education</h1>
+    <p>
+        <strong>High School Diploma, Natural Sciences</strong><br>
+        Gjimnazi "Hajdar Dushi"<br>
+        2021 - 2024
+    </p>
+    <p>
+        <strong>Web and Mobile Applications Development</strong><br>
+        Cacttus Education (In Progress)<br>
+        2024 - Present
+    </p>
+</section>
 
-    
+<!-- Certifications Section -->
+<section id="certifications" class="hidden-section">
+    <h1>Certifications</h1>
+    <ul>
+        <li><strong>The Complete 2024 Web Development Bootcamp</strong> - Udemy</li>
+        <li><strong>MERN Full Stack Developer Course Program</strong> - ATI-KOS</li>
+        <li><strong>Network Basic Skills Course Program</strong> - ATI-KOS</li>
+        <li><strong>Soft Skills</strong> - ATI-KOS</li>
+    </ul>
+</section>
+
+
+    <!-- Contact Me Section -->
     <section id="contact-me" class="hidden-section">
         <h1>Contact Me</h1>
         <p><strong>Tel:</strong> <a href="tel:+38345378784" style="color: #0073e6; font-weight: bold;">+383 45 378 784</a></p>
@@ -104,19 +133,20 @@
             <a href="https://www.instagram.com/jetonnikollbibajjjj" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 30px; margin: 0 10px;">
             </a>
-           </div> <br>
+            
+        </div> <br>
         <div><h4>© 2024 Jeton Nikollbibaj. All Rights Reserved.</h4></div>
     </section>
 
     <script>
-       
+        // Ensure the page starts at the top when refreshed
         window.onload = function() {
             setTimeout(function() {
                 window.scrollTo(0, 0);
-            }, 0); 
+            }, 0); // Slight delay ensures it's executed after page load
         };
     
-        
+        // Scroll-triggered animation for sections
         window.addEventListener('scroll', function () {
             const sections = document.querySelectorAll('.hidden-section');
             sections.forEach(section => {
@@ -128,9 +158,7 @@
                 }
             });
         });
+        
     </script>
-    
-
 </body>
-
 </html>
