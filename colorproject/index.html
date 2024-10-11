@@ -10,7 +10,7 @@
     <h1>Colors</h1>
     <h2>Learn the colors in Spanish!</h2>
     
-    <!-- Added subtitle for instruction -->
+ 
     <h3 style="font-weight: 800;">Press the colors!</h3>
 
     <div class="color-container">
@@ -39,20 +39,20 @@
     </div>
 
     <script>
-        // Function to remove all background color classes
+        
         function clearBackgroundClasses() {
             document.body.classList.remove('bg-red', 'bg-blue', 'bg-orange', 'bg-green', 'bg-yellow');
         }
 
-        // Get all images
+      
         const colorImages = document.querySelectorAll('img');
 
-        // Add click event listener to each image
+     
         colorImages.forEach(image => {
             image.addEventListener('click', () => {
-                const colorClass = image.getAttribute('data-color'); // Get the color class from data-color attribute
-                clearBackgroundClasses(); // Clear any existing background color class
-                document.body.classList.add(colorClass); // Add the new color class
+                const colorClass = image.getAttribute('data-color'); 
+                clearBackgroundClasses();
+                document.body.classList.add(colorClass); 
             });
         });
     </script>
