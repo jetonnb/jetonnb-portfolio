@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <!-- Navigation Links -->
+        
         <nav>
             <ul class="nav-links">
                 <li><a href="#projects">Projects</a></li>
@@ -25,13 +25,12 @@
         <hr />
         <img id="profili" src="./1725809477373.jpeg" alt="Profile Picture">
         
-        <!-- CV Download Button -->
+      
         <a href="./assets/JetonNb CV.pdf" download class="cv-download">
             <button class="cv-button">Download My CV</button>
         </a>
     </header>
     
-    <!-- Projects Section -->
     <section class="hidden-section" id="projects">
         <h1 style="color: aliceblue;">Projects </h1>
         <div class="projects">
@@ -59,7 +58,7 @@
             <div class="project-card">
                 <a href="./colorproject/index.html">
                     <h2>Colors in Spanish Project</h2>
-                    <img src="./assets/images/colorss.png" alt="Colors in Spanish Project">
+                    <img src="./assets/images/colorsss.png" alt="Colors in Spanish Project">
                 </a>
             </div>
 
@@ -79,7 +78,7 @@
         </div>
     </section>
 
-    <!-- About Me Section -->
+   
     <section id="about-me" class="hidden-section">
         <h1>About Me</h1>
         <p>
@@ -87,7 +86,7 @@
         </p>
     </section>
 
-    <!-- Contact Me Section -->
+    
     <section id="contact-me" class="hidden-section">
         <h1>Contact Me</h1>
         <p><strong>Tel:</strong> <a href="tel:+38345378784" style="color: #0073e6; font-weight: bold;">+383 45 378 784</a></p>
@@ -109,14 +108,14 @@
     </section>
 
     <script>
-        // Ensure the page starts at the top when refreshed
+       
         window.onload = function() {
             setTimeout(function() {
                 window.scrollTo(0, 0);
-            }, 0); // Slight delay ensures it's executed after page load
+            }, 0); 
         };
     
-        // Scroll-triggered animation for sections
+        
         window.addEventListener('scroll', function () {
             const sections = document.querySelectorAll('.hidden-section');
             sections.forEach(section => {
