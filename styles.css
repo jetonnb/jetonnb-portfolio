@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Poppins', Arial, sans-serif;
     background-image: url("./blue-background-photos-and-cyan-wallpaper-for-free-download-free-vector.jpg");
@@ -18,26 +17,26 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.95); /* Slightly more opaque */
+    background-color: rgba(255, 255, 255, 0.95);
     color: rgb(43, 127, 179);
     padding: 40px 20px;
     border-radius: 20px;
     margin: 40px auto;
-    max-width: 80%; /* Restrict the width for better layout on large screens */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect */
+    max-width: 80%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 header:hover {
-    transform: translateY(-10px); /* Subtle hover lift effect */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 h1 {
     font-size: 2.5em;
     font-weight: 600;
     margin-bottom: 10px;
-    color: rgb(30, 90, 145); /* Slightly darker for contrast */
+    color: rgb(30, 90, 145);
 }
 
 h2 {
@@ -54,16 +53,14 @@ hr {
     margin: 20px 0;
 }
 
-
 #profili {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 4px solid rgba(43, 127, 179, 0.5); /* Add a soft border around the profile picture */
+    border: 4px solid rgba(43, 127, 179, 0.5);
 }
-
 
 img#profili {
     border-radius: 50%;
@@ -81,30 +78,38 @@ img#profili {
     margin: 0 auto;
 }
 
-.projects h2 {
-    font-size: 1.2em;
-    color: #0073e6;
-    margin: 10px 0;
-}
-
-
 .project-card {
     background-color: white;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;
     text-align: center;
 }
 
 .project-card:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project-card img {
-    width: 100%;
-    height: auto;
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0073e6;
+    margin: 10px 0;
 }
 
 footer {
@@ -171,8 +176,6 @@ a:hover {
     }
 }
 
-
-
 @media (max-width: 600px) {
     header h1 {
         font-size: 2em;
@@ -182,7 +185,6 @@ a:hover {
         font-size: 1.2em;
     }
 }
-
 
 .cv-button {
     background-color: rgb(43, 127, 179);
@@ -197,10 +199,9 @@ a:hover {
 }
 
 .cv-button:hover {
-    background-color: rgb(30, 90, 145); /* Darken on hover */
-    transform: scale(1.05); /* Slightly grow on hover */
+    background-color: rgb(30, 90, 145);
+    transform: scale(1.05);
 }
-
 
 .download-btn {
     background: linear-gradient(135deg, #0073e6, #00c6ff);
@@ -259,36 +260,65 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-
-
 nav {
     width: 100%;
     margin-bottom: 20px;
 }
 
 .nav-links {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center the links */
-    gap: 20px; /* Add space between links */
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .nav-links li {
-    display: inline; /* Display list items inline */
+    display: inline;
 }
 
 .nav-links a {
-    text-decoration: none; /* Remove underline */
-    color: rgb(43, 127, 179); /* Link color */
-    font-weight: 600; /* Make links bold */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    text-decoration: none;
+    color: rgb(43, 127, 179);
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: rgb(30, 90, 145); /* Darken on hover */
+    color: rgb(30, 90, 145);
 }
 
 html {
-    scroll-behavior: smooth; /* Enables smooth scrolling */
+    scroll-behavior: smooth;
+}
+
+#certifications, #education {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#certifications ul, #education p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+#certifications ul li, #education p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#certifications h1, #education h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(43, 127, 179);
+}
+
+#certifications ul {
+    list-style-type: none;
+    padding-left: 0;
 }
