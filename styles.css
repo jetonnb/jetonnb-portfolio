@@ -333,3 +333,25 @@ html {
     padding-left: 0; /* Removes the default padding */
 }
 
+@media (max-width: 600px) {
+    nav {
+        padding: 10px; /* Add padding around the nav bar */
+    }
+
+    .nav-links {
+        flex-wrap: wrap; /* Allow the links to wrap if they don’t fit in one line */
+        justify-content: center; /* Ensure links are still centered */
+        gap: 10px; /* Reduce gap between links for smaller screens */
+    }
+
+    .nav-links li {
+        margin-bottom: 5px; /* Add some spacing between links */
+    }
+
+    .nav-links a {
+        font-size: 1em; /* Keep a good font size for readability */
+        padding: 5px 10px; /* Add some padding to make links easier to tap */
+    }
+}
+
+
