@@ -206,8 +206,8 @@ a:hover {
 }
 
 .cv-button:hover {
-    background-color: rgb(30, 90, 145); /* Darken on hover */
-    transform: scale(1.05); /* Slightly grow on hover */
+    background-color: rgb(30, 90, 145); 
+    transform: scale(1.05); 
 }
 
 
@@ -267,8 +267,8 @@ nav {
 }
 
 .nav-links {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
+    list-style-type: none; 
+    padding: 0; 
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center the links */
     gap: 20px; /* Add space between links */
