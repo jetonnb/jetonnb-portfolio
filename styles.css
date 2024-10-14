@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background-image: url ("./backgroundd.png");
+    background-image: url ("./backgroundimage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,7 +104,7 @@ img#profili {
 }
 
 .project-card img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05); 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
 }
 
