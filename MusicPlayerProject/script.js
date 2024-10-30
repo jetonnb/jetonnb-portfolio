@@ -141,6 +141,10 @@ startBtn.addEventListener('click', () => {
     playSong(); // Automatically play the song when the overlay is hidden
 });
 
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
 function nextSong() {
     songIndex = (songIndex + 1) % songs.length;
     loadSong(songs[songIndex]);
