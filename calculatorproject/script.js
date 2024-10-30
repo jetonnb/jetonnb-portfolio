@@ -43,6 +43,10 @@ function playClickSound() {
     audio.play();
 }
 
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
 // Add click sounds to buttons
 const buttons = document.querySelectorAll('button');
 buttons.forEach(button => {
