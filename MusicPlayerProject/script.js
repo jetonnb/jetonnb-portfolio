@@ -116,6 +116,10 @@ playBtn.addEventListener('click', () => {
     isPlaying ? pauseSong() : playSong();
 });
 
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
 prevBtn.addEventListener('click', prevSong);
 function prevSong() {
     songIndex = (songIndex - 1 + songs.length) % songs.length;
@@ -141,9 +145,7 @@ startBtn.addEventListener('click', () => {
     playSong(); // Automatically play the song when the overlay is hidden
 });
 
-document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-});
+
 
 function nextSong() {
     songIndex = (songIndex + 1) % songs.length;
