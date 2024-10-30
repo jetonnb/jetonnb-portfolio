@@ -5,6 +5,11 @@ window.onload = function() {
     }, 0); 
 };
 
+// Disable right-click functionality
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
 // Scroll-triggered animation for sections
 window.addEventListener('scroll', function () {
     const sections = document.querySelectorAll('.hidden-section');
@@ -15,5 +20,6 @@ window.addEventListener('scroll', function () {
         if (sectionPosition < screenPosition) {
             section.classList.add('visible');
         }
+        
     });
 });
