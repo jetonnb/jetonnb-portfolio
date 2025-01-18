@@ -475,10 +475,10 @@ ul li {
     height: 100px;
     object-fit: contain;
   }
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
     .cacttus-icon {
       top: 30%;
-      left: 130px;
+      left: 110px;
       width: 30px;
       height: 50px;
     }
@@ -486,7 +486,7 @@ ul li {
   @media (max-width: 768px) {
     .axians-icon {
       top: 35%;
-      left: 100px;
+      left: 80px;
       width: 84px;
       height: 100px;
     }
