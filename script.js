@@ -47,3 +47,4 @@ document.addEventListener("DOMContentLoaded", () => {
   typeEffect(developerTitle, text2, 3000); // Start after 3 seconds
 });
 
+
