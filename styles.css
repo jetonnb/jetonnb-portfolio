@@ -462,7 +462,6 @@ ul li {
     left: 80px;
   }
 }
-
 .portfolio-title,
 .developer-title {
   font-family: "Poppins", sans-serif;
@@ -476,6 +475,15 @@ ul li {
 
 .developer-title {
   font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .portfolio-title {
+    font-size: 1.2rem;
+  }
+  .developer-title {
+    font-size: 0.7rem;
+  }
 }
 
 .certification-cards {
