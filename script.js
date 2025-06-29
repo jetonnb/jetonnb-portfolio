@@ -13,3 +13,33 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+const element = document.querySelector(".typed-text");
+const phrases = ["Software Developer", "Frontend Specialist"];
+let currentPhrase = 0;
+let currentLetter = 0;
+let isDeleting = false;
+
+function type() {
+  let displayText = phrases[currentPhrase].substring(0, currentLetter);
+  element.textContent = displayText;
+
+  if (!isDeleting && currentLetter < phrases[currentPhrase].length) {
+    currentLetter++;
+    setTimeout(type, 100);
+  } else if (isDeleting && currentLetter > 0) {
+    currentLetter--;
+    setTimeout(type, 50);
+  } else {
+    if (!isDeleting) {
+      isDeleting = true;
+      setTimeout(type, 1000); // pause before deleting
+    } else {
+      isDeleting = false;
+      currentPhrase = (currentPhrase + 1) % phrases.length;
+      setTimeout(type, 500); // pause before typing next
+    }
+  }
+}
+
+type();

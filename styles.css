@@ -532,3 +532,11 @@ ul li {
   font-size: 0.9em;
   color: #aaa;
 }
+
+.typed-text {
+  color: rgb(149, 205, 9);
+  font-weight: 500;
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+}
