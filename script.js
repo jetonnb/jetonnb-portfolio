@@ -2,7 +2,7 @@ window.onload = function () {
   setTimeout(() => window.scrollTo(0, 0), 0);
 };
 
-document.addEventListener("contextmenu", (e) => e.preventDefault());
+// document.addEventListener("contextmenu", (e) => e.preventDefault());
 
 window.addEventListener("scroll", () => {
   document.querySelectorAll(".hidden-section").forEach((section) => {
@@ -43,3 +43,24 @@ function type() {
 }
 
 type();
+
+const skillLevels = document.querySelectorAll(".skill-level");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const skillBar = entry.target;
+        skillBar.style.width = skillBar.getAttribute("data-skill");
+        observer.unobserve(skillBar); // animate only once
+      }
+    });
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
+skillLevels.forEach((level) => {
+  observer.observe(level);
+});
