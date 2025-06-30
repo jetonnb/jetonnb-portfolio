@@ -43,23 +43,34 @@
             <button class="cv-button">Download My CV</button>
         </a>
     </header>
+
     
+
     <section class="hidden-section" id="projects">
         <h1 style="color: aliceblue;">Projects</h1>
-
         <div class="projects">
+            <div class="project-card" onclick="openGalleryModal()">
+                    <h2>AxiCars - Car Management</h2>
+                    <h3>Angular.TS | Firebase</h3>
+                    <h4>Mar 2025</h4>
+                     <img src="./assets/AxiCars/sc10.png" alt="My New Project Thumbnail">
+          </div>
+
+
             <div class="project-card">
                 <a href="./MoviesWebsite Project/index.html" target="_blank">
                     <h2>Movies Website Project</h2>
+                    <h3>HTML, CSS, JavaScript</h3>
+                    <h4>School Project | Jan 2025</h4>
                     <img src=".//assets/movieswebsiteimg.png" alt="Movies Website Project" >
 
                 </a>
-            </div>
-
-    
-            <div class="project-card">
+            </div>    
+            <div class="project-card">          
                 <a href="https://jetonnb.github.io/jnb.store/" target="_blank">
-                    <h2>Online Clothing Store Project (React.js)</h2>
+                    <h2>Online Clothing Store Project</h2>
+                    <h3>React.JS</h3>
+                    <h4>First Project | Sep 2024</h3>
                     <img src="./assets/images/Screenshot 2024-10-03 150553.png" alt="Online Clothing Store" >
 
                 </a>
@@ -68,24 +79,20 @@
             <div class="project-card">
                 <a href="./MusicPlayerProject/index.html" target="_blank">
                     <h2>Music Player Project</h2>
+                    <h3>HTML, CSS, JavaScript</h3>
+                    <h4>Sep 2024</h4>
                     <img src="./assets/images/musicplayer.png" alt="Music Player Project" >
                 </a>
             </div>
             <div class="project-card">
                 <a href="./calculatorproject/index.html" target="_blank">
                     <h2>Calculator Project</h2>
+                    <h3>HTML, CSS, JavaScript</h3>
+                    <h4>Simple Project | Oct 2024</h4>
                     <img src="./assets/images/calculator.png" alt="Calculator Project">
                 </a>
             </div>
-            <div class="project-card">
-                <a href="./colorproject/index.html" target="_blank">
-                    <h2>Colors in Spanish Project</h2>
-                    <img src="./assets/images/colorsss.png" alt="Colors in Spanish Project">
-                </a>
-            </div>
-         
         </div>
-       
     </section>
 
     <section id="about-me" class="hidden-section">
@@ -247,5 +254,27 @@
     </section>
 
     <script src="script.js"></script>
+    
+    <div id="galleryModal" class="gallery-modal">
+  <span class="close" onclick="closeGalleryModal()">&times;</span>
+  <div class="gallery-content">
+    <img id="galleryImage" src="./assets/AxiCars/sc1.png" alt="Gallery Image">
+    <div class="gallery-controls">
+      <button onclick="prevImage()">&#10094;</button>
+      <button onclick="nextImage()">&#10095;</button>
+    </div>
+    <p id="galleryDescription">
+This website is a complete car management platform developed for my company, designed to streamline the operations of managing vehicles and employees. It allows administrators to track the total number of cars, monitor their status, and manage employee assignments efficiently.
+<br>
+The platform features two separate interfaces:
+<br><br>
+<strong>Admin Site: Enables administrators to oversee all vehicles, manage employee records, and generate reports on car utilization and staff activity.
+</strong><br><br>
+<strong>User Site: Allows employees to view assigned vehicles, update relevant information, and track their own work schedules.
+</strong><br><br>
+Built using <strong>Angular </strong> for a responsive, dynamic front-end and <strong>Firebase</strong> for authentication and real-time database capabilities, the system ensures secure data handling and seamless performance across all devices. This project highlights my ability to build robust, scalable web applications tailored for business needs.    </p>
+  </div>
+</div>
+
 </body>
 </html> 

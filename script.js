@@ -64,3 +64,52 @@ const observer = new IntersectionObserver(
 skillLevels.forEach((level) => {
   observer.observe(level);
 });
+
+let galleryImages = [
+  "./assets/AxiCars/sc10.png",
+  "./assets/AxiCars/sc11.png",
+  "./assets/AxiCars/sc12.png",
+  "./assets/AxiCars/sc3.png",
+  "./assets/AxiCars/sc4.png",
+  "./assets/AxiCars/sc5.png",
+  "./assets/AxiCars/sc6.png",
+  "./assets/AxiCars/sc7.png",
+  "./assets/AxiCars/sc8.png",
+  "./assets/AxiCars/sc9.png",
+  "./assets/AxiCars/sc1.png",
+  "./assets/AxiCars/sc2.png",
+];
+
+let currentImageIndex = 0;
+
+function openGalleryModal() {
+  document.getElementById("galleryModal").style.display = "block";
+  showGalleryImage(currentImageIndex);
+}
+
+function closeGalleryModal() {
+  document.getElementById("galleryModal").style.display = "none";
+}
+
+function showGalleryImage(index) {
+  document.getElementById("galleryImage").src = galleryImages[index];
+}
+
+function prevImage() {
+  currentImageIndex =
+    (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+  showGalleryImage(currentImageIndex);
+}
+
+function nextImage() {
+  currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+  showGalleryImage(currentImageIndex);
+}
+
+// Optional: close modal when clicking outside
+window.onclick = function (event) {
+  let modal = document.getElementById("galleryModal");
+  if (event.target == modal) {
+    closeGalleryModal();
+  }
+};
