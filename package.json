@@ -4,8 +4,8 @@
   "private": true,
 "scripts": {
   "dev": "next dev",
-  "build": "next build",
-  "deploy": "next build"
+  "build": "next build && echo $null > out\\.nojekyll",
+  "deploy": "next build && echo $null > out\\.nojekyll"
 }
 ,
   "dependencies": {
