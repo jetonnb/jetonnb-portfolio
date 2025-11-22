@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <div id="intro-overlay" class="overlay">
+    <div class="overlay-content">
+      <h1>Welcome to My Music Player Project</h1>
+      <p>I hope you enjoy it!</p>
+      <button id="start-btn">Start Music Player</button>
+
+    </div>
+  </div>
+
+ 
+  <div class="player">
+    <img id="album-cover" src="images/eminem1.jpeg" alt="Album Cover">
+    <div class="song-info">
+      <h2 id="song-title">Song Title</h2>
+      <h4 id="song-artist">Artist Name</h4>
+    </div>
+    <audio id="audio"></audio>
+    <div class="controls">
+      <button id="prev-btn" title="Previous">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+          <path d="M12 8v8l-4-4 4-4zm8 0v8l-4-4 4-4z"/>
+        </svg>
+      </button>
+      <button id="play-btn" title="Play/Pause">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7L8 5z"/>
+        </svg>
+      </button>
+      <button id="next-btn" title="Next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+          <path d="M12 8v8l4-4-4-4zm8 0v8l4-4-4-4z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="progress-container">
+      <input type="range" id="progress-bar" value="0">
+    </div>
+    <div class="time-info">
+      <span id="current-time">00:00</span> / <span id="duration">00:00</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

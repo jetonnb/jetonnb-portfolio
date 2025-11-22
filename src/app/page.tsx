@@ -36,7 +36,7 @@ export default function Home() {
             </h1>
             <div className="text-2xl md:text-4xl text-gray-300 mb-8 h-[60px] flex justify-center items-center gap-2">
               <span>I am a</span>
-              <Typewriter words={["Software Developer", "Frontend Specialist", "Tech Enthusiast"]} className="text-blue-500 font-semibold" />
+              <Typewriter words={["Software Developer", "Frontend Specialist", "Tech Enthusiast", "Angular Developer"]} className="text-blue-500 font-semibold" />
             </div>
             
             <p className="max-w-2xl mx-auto text-gray-400 text-lg mb-10 leading-relaxed">
@@ -46,10 +46,10 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
               <Link
-                href="/projects"
+                href="/about"
                 className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium transition-all flex items-center gap-2 group shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]"
               >
-                View My Work
+                About Me
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </Link>
               <a
