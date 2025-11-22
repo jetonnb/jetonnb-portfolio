@@ -10,8 +10,64 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Jeton Nikollbibaj | Software Developer",
-  description: "Portfolio of Jeton Nikollbibaj, a Software Developer skilled in React, Angular, and modern web technologies.",
+  metadataBase: new URL('https://jetonnb.com'),
+  title: "Jeton Nikollbibaj | Software Developer Portfolio",
+  description: "Jeton Nikollbibaj is a Software Developer from Kosovo specializing in Angular, TypeScript, React, HTML, SCSS, and JavaScript. View my portfolio showcasing web development projects, certifications, and professional experience at Axians Kosovo.",
+  keywords: [
+    "Jeton Nikollbibaj",
+    "Software Developer",
+    "Web Developer",
+    "Angular Developer",
+    "TypeScript Developer",
+    "React Developer",
+    "Kosovo Developer",
+    "Axians Kosovo",
+    "Frontend Developer",
+    "Full Stack Developer",
+    "Gjakova",
+    "Prishtina",
+    "Portfolio",
+    "Nikollbibaj",
+  ],
+  authors: [{ name: "Jeton Nikollbibaj" }],
+  creator: "Jeton Nikollbibaj",
+  publisher: "Jeton Nikollbibaj",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://jetonnb.com",
+    siteName: "Jeton Nikollbibaj Portfolio",
+    title: "Jeton Nikollbibaj | Software Developer Portfolio",
+    description: "Jeton Nikollbibaj is a Software Developer from Kosovo specializing in Angular, TypeScript, React, and modern web technologies. View my projects and experience.",
+    images: [
+      {
+        url: "/favicon.png",
+        width: 512,
+        height: 512,
+        alt: "Jeton Nikollbibaj",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jeton Nikollbibaj | Software Developer Portfolio",
+    description: "Software Developer specializing in Angular, TypeScript, React, and modern web technologies.",
+    images: ["/favicon.png"],
+  },
+  verification: {
+    google: "your-google-verification-code", // You'll need to add this later
+  },
 };
 
 export default function RootLayout({

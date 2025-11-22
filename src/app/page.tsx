@@ -9,8 +9,55 @@ import { portfolioData } from "@/data/portfolio";
 import { TechIcons } from "@/components/TechIcons";
 
 export default function Home() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jeton Nikollbibaj",
+    "jobTitle": "Software Developer",
+    "url": "https://jetonnb.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/jeton-nikollbibaj-1b98451bb/",
+      "https://github.com/jetonnb",
+      "https://www.facebook.com/Jeton.Nb/",
+      "https://www.instagram.com/jetonnikollbibajjjj"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gjakova",
+      "addressRegion": "Kosovo"
+    },
+    "email": "jeton_nb@icloud.com",
+    "telephone": "+383 45 378 784",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Axians Kosovo",
+      "url": "https://www.axians-kosovo.com/"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Cacttus Education"
+    },
+    "knowsAbout": [
+      "Angular",
+      "TypeScript",
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "SCSS",
+      "Firebase",
+      "Web Development",
+      "Frontend Development"
+    ]
+  };
+
   return (
     <div className="min-h-screen">
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Dynamic Background - Optimized */}
