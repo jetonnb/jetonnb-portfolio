@@ -1,12 +1,16 @@
 import type { NextConfig } from "next";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  basePath: '/jetonnb-portfolio',
-  assetPrefix: '/jetonnb-portfolio/',
+const nextConfig: NextConfig = {
+  output: "export", // this replaces next export
+  basePath: "/jetonnb-portfolio",
+  assetPrefix: "/jetonnb-portfolio",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 };
 
-module.exports = nextConfig;
-
 export default nextConfig;
+
+
+
