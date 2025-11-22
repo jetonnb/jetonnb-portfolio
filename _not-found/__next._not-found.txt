@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[39756,["/jetonnb-portfolio/_next/static/chunks/ff1a16fafef87110.js","/jetonnb-portfolio/_next/static/chunks/247eb132b7f7b574.js"],"default"]
 3:I[37457,["/jetonnb-portfolio/_next/static/chunks/ff1a16fafef87110.js","/jetonnb-portfolio/_next/static/chunks/247eb132b7f7b574.js"],"default"]
-0:{"buildId":"Zyw4LocIHxUKWNN-Qi3Tk","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"PNX9W3FTE2SHshDIcMV5i","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
