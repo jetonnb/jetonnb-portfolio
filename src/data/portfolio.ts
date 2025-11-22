@@ -9,7 +9,7 @@ export const portfolioData = {
     email: "jeton_nb@icloud.com",
     phone: "+383 45 378 784",
     cv: `${basePath}/assets/JetonNb CV.pdf`,
-    avatar: "/favicon.png", // Using favicon as profile pic as per original
+    avatar: `${basePath}/favicon.png`, // Using favicon as profile pic as per original
   },
   social: [
     {
