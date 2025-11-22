@@ -1,0 +1,332 @@
+body {
+  background-color: #121212;
+  color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* search bar styling */
+form input {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+form input:focus {
+  background-color: #3a3a3a;
+  color: #fff;
+  border-color: #777;
+  box-shadow: none;
+}
+
+.bg-gradient {
+  background: linear-gradient(90deg, #1f1f1f, #292929);
+  width: 100%;
+  margin: 0;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  padding: 2rem 2rem;
+  margin: 0;
+}
+
+/* navbar logo */
+.navbar-brand {
+  font-size: 2.1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.navbar-brand i {
+  margin-right: 8px;
+}
+
+/* navbar links */
+.nav-link {
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #555b5c;
+}
+
+/* button styling */
+.btn-outline-light {
+  border-color: #555;
+}
+
+.btn-outline-light:hover {
+  background-color: #2d3030;
+  border-color: #f7fcfc;
+  color: #fff;
+}
+
+/* footer styling */
+footer {
+  background: linear-gradient(90deg, #1f1f1f, #292929);
+  padding: 2rem 0;
+}
+
+footer h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #555b5c;
+}
+
+footer .social-icons a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #555b5c;
+}
+
+footer .form-control {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+footer .form-control:focus {
+  background-color: #3a3a3a;
+  border-color: #777;
+}
+
+footer .btn-light {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+footer .btn-light:hover {
+  background-color: #2d3030;
+}
+
+footer .col-md-3 p {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-container button {
+  background-color: #222528;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination-container button.active {
+  background-color: #25272a;
+  pointer-events: none;
+  border: 2px solid #f0b429;
+}
+
+.pagination-container button:hover {
+  background-color: #2a2c2f;
+}
+
+.pagination-container button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* button styling for contact Us */
+.btn-light {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.btn-light:hover {
+  background-color: #2d3030;
+}
+
+/* subscribe button styling */
+footer .btn-light {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+footer .btn-light:hover {
+  background-color: #2d3030;
+}
+
+input {
+  color: white;
+}
+
+.email-input {
+  color: rgba(246, 241, 241, 0.408);
+}
+
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.318);
+}
+/* General mobile adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card-img-top {
+    height: 250px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    padding: 1rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    display: block;
+    margin: 5px 0;
+  }
+
+  .btn-outline-light {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+
+  footer {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  footer h5 {
+    font-size: 1rem;
+  }
+
+  footer ul {
+    text-align: center;
+  }
+
+  footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  footer .social-icons {
+    margin-top: 10px;
+  }
+
+  footer .social-icons a {
+    margin: 0 5px;
+  }
+
+  .pagination-container {
+    flex-wrap: wrap;
+  }
+
+  .pagination-container button {
+    font-size: 14px;
+    padding: 8px 10px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  footer h5 {
+    font-size: 0.9rem;
+  }
+
+  .btn-light,
+  .btn-outline-light {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .email-input::placeholder {
+    font-size: 12px;
+  }
+
+  .pagination-container button {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}
