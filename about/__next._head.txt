@@ -3,6 +3,6 @@
 4:I[97367,["/jetonnb-portfolio/_next/static/chunks/ff1a16fafef87110.js","/jetonnb-portfolio/_next/static/chunks/247eb132b7f7b574.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
 7:I[27201,["/jetonnb-portfolio/_next/static/chunks/ff1a16fafef87110.js","/jetonnb-portfolio/_next/static/chunks/247eb132b7f7b574.js"],"IconMark"]
-0:{"buildId":"m6q257nzfVRNPP_r_AhvI","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"G-dYBfeI3uP1ocSW-vkt-","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 6:[["$","title","0",{"children":"Jeton Nikollbibaj | Software Developer"}],["$","meta","1",{"name":"description","content":"Portfolio of Jeton Nikollbibaj, a Software Developer skilled in React, Angular, and modern web technologies."}],["$","link","2",{"rel":"icon","href":"/jetonnb-portfolio/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L7","3",{}]]
