@@ -7,7 +7,7 @@ export const portfolioData = {
     email: "jeton_nb@icloud.com",
     phone: "+383 45 378 784",
     cv: `/assets/JetonNb CV.pdf`,
-    avatar: `/favicon.png`, // Using favicon as profile pic as per original
+    avatar: `/favicon.png`, 
   },
   social: [
     {
@@ -35,6 +35,7 @@ export const portfolioData = {
     { name: "Firebase", level: 100 },
     { name: "Problem Solving", level: 100 },
     { name: "TypeScript", level: 90 },
+    { name: "Next.js", level: 80 },
     { name: "React.js", level: 80 },
     { name: "JavaScript", level: 80 },
   ],
